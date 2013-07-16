@@ -1,0 +1,68 @@
+'    ____                  ____             ____
+'   / __/_ _____  ___ ____/ __/__________  / / /
+'  _\ \/ // / _ \/ -_) __/\ \/ __/ __/ _ \/ / / 
+' /___/\_,_/ .__/\__/_/ /___/\__/_/  \___/_/_/  
+'         /_/                  game engine
+'
+' Cross-reference for tiles and sprites.
+'
+' Syntax for each line is:
+'      [number] [tilename] [tile description]
+' Ex.  5130 wirecornerul upper-left corner of wire path
+'
+' Tile numbers may go from 1-32767. (Tile 0 is empty space.)
+' Tiles 9000-9999 are invisible during gameplay.
+'
+' Commands:
+'      # tiles              < tile declarations start here
+'      # sprites            < sprite descriptions start here
+' __________________________________________________________
+
+
+# tiles
+
+1 ghost-door wall of the ghost box
+2 pellet a normal pellet (required)
+3 pellet-power a power pellet (makes pac-man invincible)
+4 start the starting position for pac-man
+
+10 ghost-blinky blinky
+11 ghost-pinky pinky
+12 ghost-inky inky
+13 ghost-sue sue
+
+20 door-h horizontal door (flip to other side of maze)
+21 door-v vertical door (flip to other side of maze)
+22 showlogo causes the logo to be drawn
+23 hiscores generate and draw a hi-score list
+
+100 wall-straight-horiz a horizontal wall
+101 wall-straight-vert a vertical wall
+
+105 wall-corner-ll lower-left corner of a wall
+106 wall-corner-lr lower-right corner of a wall
+107 wall-corner-ul upper-left corner of a wall
+108 wall-corner-ur upper-right corner of a wall
+
+110 wall-end-b bottom end of a wall
+111 wall-end-l left end of a wall
+112 wall-end-r right end of a wall
+113 wall-end-t top end of a wall
+
+120 wall-nub a one-tile "nub" wall
+
+130 wall-t-bottom a "T"-shaped wall, bottom-orientation
+131 wall-t-left a "T"-shaped wall, left-orientation
+132 wall-t-right a "T"-shaped wall, right-orientation
+133 wall-t-top a "T"-shaped wall, top-orientation
+
+140 wall-x a four-way wall
+
+300 glasses ghost glasses
+
+500 x-paintwall use this tile to paint walls automatically
+
+
+
+# sprites
+
