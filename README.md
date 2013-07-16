@@ -49,12 +49,12 @@ making sure to replace the path with the actual path to SysWOW64
 (or System32 for 32-bit) on your machine:
 
    * 64-bit Windows
-     - regsvr32 C:\Windows\SysWOW64\RICHTX32.OCX
-	 - regsvr32 C:\Windows\SysWOW64\COMDLG32.OCX
+     > regsvr32 C:\Windows\SysWOW64\RICHTX32.OCX
+	 > regsvr32 C:\Windows\SysWOW64\COMDLG32.OCX
 	 
    * 32-bit Windows
-     - regsvr32 C:\Windows\System32\RICHTX32.OCX
-	 - regsvr32 C:\Windows\System32\COMDLG32.OCX
+     > regsvr32 C:\Windows\System32\RICHTX32.OCX
+	 > regsvr32 C:\Windows\System32\COMDLG32.OCX
 
 Both commands should say the DLL was registered successfully. After
 that, run pacman/maze_editor.exe and you should be good to go.
