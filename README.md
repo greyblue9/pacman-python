@@ -5,6 +5,8 @@ With contributions by Andy Sommerville (2007)
 Github project page:
 https://github.com/greyblue9/pacman-python
 
+![Screenshot - 16x16 tile version](/screenshot-1.png)
+
 
 Thank you for your interest in my tribute to everyone's favorite Pac-Man
 games of yesteryear! Pacman features 12 colorful levels of varying
