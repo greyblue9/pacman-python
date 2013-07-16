@@ -35,7 +35,7 @@ Running the Maze Editor
 To run the maze editor in Windows 7 or 8 (64-bit), perform the following
 steps depending on your version of Windows:
 
-### Windows 7/8 (32-bit)
+### Windows 7/8
 
 Copy RICHTX32.OCX and COMDLG32.OCX in the libraries/ folder to
 your Windows SysWOW64 directory for 64-bit Windows, or System32 if you 
