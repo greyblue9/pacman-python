@@ -34,8 +34,8 @@ download unofficial 64-bit binaries of Pygame as well.
 Running the Maze Editor
 -----------------------
 
-To run the maze editor in Windows 7 or 8 (64-bit), perform the following
-steps depending on your version of Windows:
+To run the maze editor in Windows 7 or 8, perform the following steps
+depending on your version of Windows:
 
 ### Windows 7/8
 
