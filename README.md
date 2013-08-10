@@ -75,3 +75,30 @@ Haven't tested this combination, but please let me know if you have,
 along with any extra steps you had to take, and I will make the changes
 to this document.
 
+Since the maze editor was written and built in Visual Basic 6, I do
+have some suggested steps that I've adapted from another app written in VB6,
+[Heirowords](http://home.comcast.net/~thot/Linux.htm). Some of the example
+commands are for a Ubuntu system, but a similar command should be available
+under any modern Linux system.
+
+   - Install [Wine](http://www.winehq.org/). 
+    
+     	sudo apt-get install wine
+
+   - Install and run [winetricks](http://wiki.winehq.org/winetricks)
+     to download the VB6 runtime libraries for Wine
+     
+		wget http://kegel.com/wine/winetricks
+		chmod +x winetricks
+		sudo mv winetricks /usr/bin/winetricks
+		winetricks
+
+   - When winetricks opens, select the package "vb6run" and install it.
+
+   - Copy COMDLG32.OCX and RICHTX32.OCX from the libraries/ folder to
+     your Wine system32 directory, probably 
+     `~/.wine/drive_c/windows/system32/`.
+
+Please let me know if you have any luck with these steps, or have any
+suggestions, etc. Good luck and enjoy the maze editor!
+
