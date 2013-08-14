@@ -183,3 +183,7 @@ between both versions of pacman.
 
 2. Consolidating pacman original (16x16) with pacman-large (24x24) into one
 source file, or set of source files.
+
+3. Source for the Maze Editor (written in VB6)
+
+
