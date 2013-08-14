@@ -106,3 +106,80 @@ under any modern Linux system.
 Please let me know if you have any luck with these steps, or have any
 suggestions, etc. Good luck and enjoy the maze editor!
 
+
+Using the Maze Editor
+---------------------
+
+### Background and How it Works ###
+
+Skip to the **Quick Start** section below if you're not interested in the
+technical details! :)
+
+The maze editor will expect to find a res/ directory in the path to the maze
+editor executable; otherwise, it will not work. It should be set up this way
+by default. In addition to the contents of the res/tiles/ directory, it also
+looks for res/crossref.txt (for tile descriptions and code values), res/sprite
+(for fruit graphics), and will default the level open dialog box to the
+res/levels directory.
+
+Each level is simply a text file with some level properties at the beginning,
+followed by a `# startleveldata` tag which introduces the level data itself,
+and then finally an `# endleveldata` tag and tag for `# sprites` (not used).
+
+In the level data section, each line corresponds to one row of tiles on the
+screen, and each tile consists of the tile's numeric value as found in
+crossref.txt, separated from the next tile by a space character. If you're not
+sure what a particular tile number corresponds to, you can look it up in
+crossref.txt.
+
+If you know what a tile looks like, but you're not sure of its number, you can
+click on it in the maze editor tile pallette, and some information will appear
+above, including the tile's name, description, and tile number. The latter is
+what gets used in the level description files.
+
+### Quick Start ###
+
+Of course, the simplest way to make a level is just to use the maze editor and
+make heavy use of the "x-paintwall" special tile, which will paint walls with
+connections to adjacent walls, so you don't have to worry about it. The
+"x-paintwall" tile is shown here:
+
+![Screenshot - x-paintwall tile](/screenshot-maze-editor-x-paintwall.png)
+
+Set your level size to have an odd number of columns (x-width), and turn on
+"Symmetric editing mode" to make things really efficient. This technique was
+used in nearly all levels that come with the game.
+
+Besides the walls themselves, there are several other tile elements required for
+a level to work properly. The easiest way to check this is to load an example
+level, such as `1.txt`. The required elements are:
+
+   - Maze must be fully closed in, with the exception of doors 
+   - Doors must have a "door-h" or "door-v" tile blocking the exit. This tells
+     the game to teleport pacman to the corresponding door tag on the other
+     side of the board.
+   - The ghost box itself must have room for 3 ghosts
+	 inside, and must have a ghost-door in the top middle, directly
+	 above/outside of which you should place Blinky (the red ghost).
+	 Inside, the recommended order is Pinky, Inky, Sue (pink, blue, and
+	 orange, respectively). See the ghost box in level `1.txt` for an example.
+   - You must place Pacman! When the level starts, he will go to the right.
+   - You must place at least one regular pellet.
+   - Placing power pellets is recommmended, but not required.
+
+If you want to edit the title screen, it can be found as level `0.txt`. It uses
+a special tile to indicate where the game logo should be placed, which is found
+in the res/text/ folder (`logo.gif`).
+
+Happy editing! Please send me your creations; I may put level packs together for
+the best ones I see and distribute them with the game.
+
+
+Coming soon
+===========
+
+1. Ability to re-use same level sets, maze editor, and most of the res/ directory
+between both versions of pacman.
+
+2. Consolidating pacman original (16x16) with pacman-large (24x24) into one
+source file, or set of source files.
