@@ -5,6 +5,9 @@ With contributions by Andy Sommerville (2007)
 Github project page:
 https://github.com/greyblue9/pacman-python
 
+Personal project page:
+http://pinproject.com/pacman/pacman.htm
+
 ![Screenshot - 16x16 tile version](/screenshot-1.png)
 
 
@@ -21,7 +24,7 @@ about it, so I can enjoy your creation too! Have fun!
 Installation
 ------------
 
-Pac-man requires Python 2.x (tested on versions 2.6 and 2.7), and the
+Pac-man requires **Python 2.x** (tested on versions 2.6 and 2.7), and the
 corresponding version of the Pygame library, freely available online. Make sure
 you install the matching (32- or 64-bit) version of Pygame as your Python
 installation, and the one compatible with your Python version number. The last I
@@ -33,6 +36,10 @@ as well.
 Running the Maze Editor
 -----------------------
 
+![Screenshot - Maze editor](/screenshot-maze-editor-1.png)
+![Screenshot - Maze editor level properties](/screenshot-maze-editor-2.png)
+
+
 To run the maze editor in Windows 7 or 8, perform the following steps depending
 on your version of Windows:
 
@@ -41,10 +48,10 @@ on your version of Windows:
 Copy RICHTX32.OCX and COMDLG32.OCX in the libraries/ folder to your Windows
 SysWOW64 directory for 64-bit Windows, or System32 if you are running 32-bit
 Windows. The paths are typically "C:\Windows\SysWOW64" and "C:\Windows\System32"
-respectively. Second, open command prompt as Administrator (click Start, type
-"cmd" and right-click > Run as Administrator) and run the following commands,
-making sure to replace the path with the actual path to SysWOW64 (or System32
-for 32-bit) on your machine:
+respectively. Second, open command prompt as **Administrator** (click Start,
+type "cmd" and right-click > Run as Administrator) and run the following
+commands, making sure to replace the path with the actual path to SysWOW64 (or
+System32 for 32-bit) on your machine:
 
    * 64-bit Windows
    
