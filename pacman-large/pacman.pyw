@@ -19,6 +19,7 @@
 
 import pygame, sys, os, random
 from pygame.locals import *
+import math
 
 # WIN???
 SCRIPT_PATH=sys.path[0]
