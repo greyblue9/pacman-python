@@ -1,0 +1,131 @@
+
+; Dependency file for setup wizards.
+
+[Version]
+Version=6.0.81.77
+
+; Dependencies for MSComCt2.ocx
+
+; Default Dependencies ----------------------------------------------
+
+[MSComCt2.ocx]
+Dest=$(WinSysPath)
+Register=$(DLLSelfRegister)
+Version=6.0.81.77
+Uses1=ComCat.dll
+Uses2=
+CABFileName=MSComCt2.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=MSComCt2.inf
+
+[ComCat.dll]
+Dest=$(WinSysPathSysFile)
+Register=$(DLLSelfRegister)
+Uses1=
+
+; Localized Dependencies -------------------------------------------- 
+
+; ** German (DE) ***
+; (0007 = German)
+;
+[MSComCt2.ocx <0007>]
+Uses1=MSCc2DE.dll
+Uses2=
+
+[MSCc2DE.dll <0007>]
+Uses1=
+CABFileName=MSCc2DE.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=MSCc2DE.inf
+
+; ** French (FR) ***
+; (000C = French)
+;
+[MSComCt2.ocx <000C>]
+Uses1=MSCc2FR.dll
+Uses2=
+
+[MSCc2FR.dll <000C>]
+Uses1=
+CABFileName=MSCc2FR.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=MSCc2FR.inf
+
+; ** Italian (IT) ***
+; (0010 = Italian)
+;
+[MSComCt2.ocx <0010>]
+Uses1=MSCc2IT.dll
+Uses2=
+
+[MSCc2IT.dll <0010>]
+Uses1=
+CABFileName=MSCc2IT.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=MSCc2IT.inf
+
+; ** Spanish (ES) ***
+; (000A = Spanish)
+;
+[MSComCt2.ocx <000A>]
+Uses1=MSCc2ES.dll
+Uses2=
+
+[MSCc2ES.dll <000A>]
+Uses1=
+CABFileName=MSCc2ES.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=MSCc2ES.inf
+
+; ** Japanese (JP) ***
+; (0011 = Japanese)
+;
+[MSComCt2.ocx <0011>]
+Uses1=MSCc2JP.dll
+Uses2=
+
+[MSCc2JP.dll <0011>]
+Uses1=
+CABFileName=MSCc2JP.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=MSCc2JP.inf
+
+; ** Korean (KO) ***
+; (0012 = Korean)
+;
+[MSComCt2.ocx <0012>]
+Uses1=MSCc2KO.dll
+Uses2=
+
+[MSCc2KO.dll <0012>]
+Uses1=
+CABFileName=MSCc2KO.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=MSCc2KO.inf
+
+; ** Chinese Traditional (CHT) ***
+; (0404 = Chinese Traditional)
+;
+[MSComCt2.ocx <0404>]
+Uses1=MSCc2CHT.dll
+Uses2=
+
+[MSCc2CHT.dll <0404>]
+Uses1=
+CABFileName=MSCc2CHT.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=MSCc2CHT.inf
+
+; ** Chinese Simplified (CHS) ***
+; (0804 = Chinese Simplified)
+;
+[MSComCt2.ocx <0804>]
+Uses1=MSCc2CHS.dll
+Uses2=
+
+[MSCc2CHS.dll <0804>]
+Uses1=
+CABFileName=MSCc2CHS.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=MSCc2CHS.inf
+
