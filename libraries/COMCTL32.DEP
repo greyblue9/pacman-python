@@ -1,0 +1,131 @@
+
+; Dependency file for setup wizards.
+
+[Version]
+Version=6.0.80.22
+
+; Dependencies for ComCtl32.ocx
+
+; Default Dependencies ----------------------------------------------
+
+[ComCtl32.ocx]
+Dest=$(WinSysPath)
+Register=$(DLLSelfRegister)
+Version=6.0.80.22
+Uses1=ComCat.dll
+Uses2=
+CABFileName=ComCtl32.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=ComCtl32.inf
+
+[ComCat.dll]
+Dest=$(WinSysPathSysFile)
+Register=$(DLLSelfRegister)
+Uses1=
+
+; Localized Dependencies --------------------------------------------
+
+; ** German (DE) ***
+; (0007 = German)
+;
+[ComCtl32.ocx <0007>]
+Uses1=CmCtlDE.dll
+Uses2=
+
+[CmCtlDE.dll <0007>]
+Uses1=
+CABFileName=CmCtlDE.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=CmCtlDE.inf
+
+; ** French (FR) ***
+; (000C = French)
+;
+[ComCtl32.ocx <000C>]
+Uses1=CmCtlFR.dll
+Uses2=
+
+[CmCtlFR.dll <000C>]
+Uses1=
+CABFileName=CmCtlFR.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=CmCtlFR.inf
+
+; ** Italian (IT) ***
+; (0010 = Italian)
+;
+[ComCtl32.ocx <0010>]
+Uses1=CmCtlIT.dll
+Uses2=
+
+[CmCtlIT.dll <0010>]
+Uses1=
+CABFileName=CmCtlIT.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=CmCtlIT.inf
+
+; ** Spanish (ES) ***
+; (000A = Spanish)
+;
+[ComCtl32.ocx <000A>]
+Uses1=CmCtlES.dll
+Uses2=
+
+[CmCtlES.dll <000A>]
+Uses1=
+CABFileName=CmCtlES.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=CmCtlES.inf
+
+; ** Japanese (JP) ***
+; (0011 = Japanese)
+;
+[ComCtl32.ocx <0011>]
+Uses1=CmCtlJP.dll
+Uses2=
+
+[CmCtlJP.dll <0011>]
+Uses1=
+CABFileName=CmCtlJP.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=CmCtlJP.inf
+
+; ** Korean (KO) ***
+; (0012 = Korean)
+;
+[ComCtl32.ocx <0012>]
+Uses1=CmCtlKO.dll
+Uses2=
+
+[CmCtlKO.dll <0012>]
+Uses1=
+CABFileName=CmCtlKO.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=CmCtlKO.inf
+
+; ** Chinese Traditional (CHT) ***
+; (0404 = Chinese Traditional)
+;
+[ComCtl32.ocx <0404>]
+Uses1=CmCtlCHT.dll
+Uses2=
+
+[CmCtlCHT.dll <0404>]
+Uses1=
+CABFileName=CmCtlCHT.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=CmCtlCHT.inf
+
+; ** Chinese Simplified (CHS) ***
+; (0804 = Chinese Simplified)
+;
+[ComCtl32.ocx <0804>]
+Uses1=CmCtlCHS.dll
+Uses2=
+
+[CmCtlCHS.dll <0804>]
+Uses1=
+CABFileName=CmCtlCHS.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=CmCtlCHS.inf
+

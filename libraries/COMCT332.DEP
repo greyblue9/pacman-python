@@ -1,0 +1,162 @@
+
+; Dependency file for setup wizards.
+
+[Version]
+Version=6.0.81.76
+
+; Dependencies for Comct332.ocx
+
+; Default Dependencies ----------------------------------------------
+
+[Comct332.ocx]
+Dest=$(WinSysPath)
+Register=$(DLLSelfRegister)
+Version=6.0.81.76
+Uses1=MSVBVM60.dll
+Uses2=StdOle2.tlb
+Uses3=OleAut32.dll
+Uses4=OlePro32.dll
+Uses5=AsycFilt.dll
+Uses6=ComCat.dll
+Uses7=
+CABFileName=Comct332.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=Comct332.inf
+
+[ComCat.dll]
+Dest=$(WinSysPathSysFile)
+Register=$(DLLSelfRegister)
+Uses1=
+
+[MSVBVM60.dll]
+Dest=$(WinSysPathSysFile)
+Register=$(DLLSelfRegister)
+
+[STDOLE2.TLB]
+Register=$(TLBRegister)
+Dest=$(WinSysPathSysFile)
+Uses1=OleAut32.dll
+Uses2=OlePro32.dll
+Uses3=AsycFilt.dll
+
+[OLEAUT32.DLL]
+Register=$(DLLSelfRegister)
+Dest=$(WinSysPathSysFile)
+Uses1=
+
+[OLEPRO32.DLL]
+Register=$(DLLSelfRegister)
+Dest=$(WinSysPathSysFile)
+Uses1=
+
+[ASYCFILT.DLL]
+Register=
+Dest=$(WinSysPathSysFile)
+Uses1=
+
+; Localized Dependencies -------------------------------------------- 
+
+; ** German (DE) ***
+; (0007 = German)
+;
+[Comct332.ocx <0007>]
+Uses1=Cmct3DE.dll
+Uses2=
+
+[Cmct3DE.dll <0007>]
+Uses1=
+CABFileName=Cmct3DE.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=Cmct3DE.inf
+
+; ** French (FR) ***
+; (000C = French)
+;
+[Comct332.ocx <000C>]
+Uses1=Cmct3FR.dll
+Uses2=
+
+[Cmct3FR.dll <000C>]
+Uses1=
+CABFileName=Cmct3FR.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=Cmct3FR.inf
+
+; ** Italian (IT) ***
+; (0010 = Italian)
+;
+[Comct332.ocx <0010>]
+Uses1=Cmct3IT.dll
+Uses2=
+
+[Cmct3IT.dll <0010>]
+Uses1=
+CABFileName=Cmct3IT.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=Cmct3IT.inf
+
+; ** Spanish (ES) ***
+; (000A = Spanish)
+;
+[Comct332.ocx <000A>]
+Uses1=Cmct3ES.dll
+Uses2=
+
+[Cmct3ES.dll <000A>]
+Uses1=
+CABFileName=Cmct3ES.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=Cmct3ES.inf
+
+; ** Japanese (JP) ***
+; (0011 = Japanese)
+;
+[Comct332.ocx <0011>]
+Uses1=Cmct3JP.dll
+Uses2=
+
+[Cmct3JP.dll <0011>]
+Uses1=
+CABFileName=Cmct3JP.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=Cmct3JP.inf
+
+; ** Korean (KO) ***
+; (0012 = Korean)
+;
+[Comct332.ocx <0012>]
+Uses1=Cmct3KO.dll
+Uses2=
+
+[Cmct3KO.dll <0012>]
+Uses1=
+CABFileName=Cmct3KO.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=Cmct3KO.inf
+
+; ** Chinese Traditional (CHT) ***
+; (0404 = Chinese Traditional)
+;
+[Comct332.ocx <0404>]
+Uses1=Cmct3CHT.dll
+Uses2=
+
+[Cmct3CHT.dll <0404>]
+Uses1=
+CABFileName=Cmct3CHT.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=Cmct3CHT.inf
+
+; ** Chinese Simplified (CHS) ***
+; (0804 = Chinese Simplified)
+;
+[Comct332.ocx <0804>]
+Uses1=Cmct3CHS.dll
+Uses2=
+
+[Cmct3CHS.dll <0804>]
+Uses1=
+CABFileName=Cmct3CHS.cab
+CABDefaultURL=http://activex.microsoft.com/controls/vb6
+CABINFFile=Cmct3CHS.inf
+
