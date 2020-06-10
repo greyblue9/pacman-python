@@ -3,6 +3,8 @@
 # pacman.pyw
 # By David Reilly
 
+# Code conversion and improvement by https://github.com/Wollala/pacman-python
+
 # Modified by Andy Sommerville, 8 October 2007:
 # - Changed hard-coded DOS paths to os.path calls
 # - Added constant SCRIPT_PATH (so you don't need to have pacman.pyw and res in your cwd, as long
