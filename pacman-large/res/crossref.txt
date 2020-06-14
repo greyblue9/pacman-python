@@ -61,6 +61,8 @@
 300 glasses ghost glasses
 
 500 x-paintwall use this tile to paint walls automatically
+501 pacwoman a pacwoman
+502 heart a heart
 
 
 

@@ -24,7 +24,7 @@ about it, so I can enjoy your creation too! Have fun!
 Installation
 ------------
 
-Pac-man requires **Python 2.x** (tested on versions 2.6 and 2.7), and the
+Pac-man requires **Python 3.x** (tested on 3.8), and the
 corresponding version of the Pygame library, freely available online. Make sure
 you install the matching (32- or 64-bit) version of Pygame as your Python
 installation, and the one compatible with your Python version number. The last I
@@ -174,6 +174,10 @@ in the res/text/ folder (`logo.gif`).
 Happy editing! Please send me your creations; I may put level packs together for
 the best ones I see and distribute them with the game.
 
+### Contributors ###
+* David Reilly https://github.com/greyblue9/pacman-python
+* bumjoon.park https://github.com/Wollala/pacman-python
+* Hobbledehoy https://github.com/chelyabinsk/pacman-multiplayer
 
 Coming soon
 ===========
