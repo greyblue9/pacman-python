@@ -185,5 +185,3 @@ between both versions of pacman.
 source file, or set of source files.
 
 3. Source for the Maze Editor (written in VB6)
-
-
